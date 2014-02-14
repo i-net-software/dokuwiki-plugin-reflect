@@ -1,0 +1,8 @@
+﻿# General Plugin Info do not edit
+
+base   reflect
+author i-net software
+email  tools@inetsoftware.de
+date   2009-01-19
+name   iReflect
+url    http://www.inetsoftware.de/products/other-products/dokuwiki-plugins/ireflect
