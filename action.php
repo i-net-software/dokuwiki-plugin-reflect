@@ -17,7 +17,7 @@ class action_plugin_reflect extends DokuWiki_Action_Plugin {
 
 	var $functions = null;
 
-	function register(&$controller) {
+	function register(Doku_Event_Handler $controller) {
 
 		if ( empty($_REQUEST['reflect']) ) { return; }
 		$controller->register_hook('MEDIA_SENDFILE', 'BEFORE', $this, 'reflect__reflect');

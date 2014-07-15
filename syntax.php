@@ -29,7 +29,7 @@ class syntax_plugin_reflect extends DokuWiki_Syntax_Plugin {
 		$this->Lexer->addSpecialPattern('\{\{reflect>[^}]*\}\}',$mode,'plugin_reflect');
 	} 
 
-	function handle($match, $state, $pos, &$handler){
+	function handle($match, $state, $pos, Doku_Handler $handler){
 
 		$match = substr($match, 10, -2); // strip markup
 		$array = array();
@@ -52,7 +52,7 @@ class syntax_plugin_reflect extends DokuWiki_Syntax_Plugin {
 		return $array;
 	}
 
-	function render($mode, &$renderer, $data){
+	function render($mode, Doku_Renderer $renderer, $data){
 		global $ID;
 
 		if ($mode == 'xhtml'){
