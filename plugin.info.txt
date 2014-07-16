@@ -3,6 +3,6 @@
 base   reflect
 author i-net software
 email  tools@inetsoftware.de
-date   2014-06-04
+date   2014-07-16
 name   iReflect
 url    http://www.inetsoftware.de/products/other-products/dokuwiki-plugins/ireflect
